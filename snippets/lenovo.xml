@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<manifest>
+  <remote name="lenovo" fetch="https://github.com/Lenovo-SM8850" />
+  <remote name="clo" fetch="https://git.codelinaro.org/clo/la" />
+  <project path="device/lenovo/sm8850-common" name="android_device_lenovo_sm8850-common" remote="lenovo" revision="lineage-24.0" />
+  <project path="device/lenovo/baldur" name="android_device_lenovo_baldur" remote="lenovo" revision="lineage-24.0" />
+  <project path="hardware/lenovo" name="android_hardware_lenovo" remote="lenovo" revision="lineage-24.0" />
+  <project path="vendor/lenovo/sm8850-common" name="proprietary_vendor_lenovo_sm8850-common" remote="lenovo" revision="lineage-24.0" />
+  <project path="vendor/lenovo/baldur" name="proprietary_vendor_lenovo_baldur" remote="lenovo" revision="lineage-24.0" />
+  <!-- android_kernel_lenovo_sm8850: based on 557159b6a0d06f1c6f07ec4c1f22bc9309a113e4. -->
+  <project path="kernel/platform/kernel-6.12/vendor/lenovo/sm8850" name="android_kernel_lenovo_sm8850" remote="lenovo" revision="lineage-24.0" />
+  <!-- android_kernel_lenovo_sm8850-modules: based on f2ecb6a09ea56bd8ec9a0bfd2e97f45e200ab322. -->
+  <project path="kernel/platform/kernel-6.12/vendor/lenovo/sm8850-modules" name="android_kernel_lenovo_sm8850-modules" remote="lenovo" revision="lineage-24.0" />
+  <!-- android_kernel_lenovo_sm8850-devicetrees: based on 297ae988607cbecb27d263f3c51c1ae7ea652a7b. -->
+  <project path="kernel/platform/kernel-6.12/vendor/lenovo/sm8850-devicetrees" name="android_kernel_lenovo_sm8850-devicetrees" remote="lenovo" revision="lineage-24.0" />
+  <project path="vendor/qcom/opensource/lights" name="platform/vendor/qcom-opensource/lights" remote="clo" revision="3ce60163a56540da8dcf0c8d355138fcc299844b" upstream="core-technologies.lnx.16.0.r26-rel" dest-branch="core-technologies.lnx.16.0.r26-rel" clone-depth="1" />
+  <!-- Wuji and default baldur SDM ABI profiles and HDR composition controls, based on 3f56965f0690fee568903083f09a8349a803da31 (LineageOS / CLO 171). -->
+  <project path="hardware/qcom-caf/sm8850/display/core" name="android_vendor_qcom_opensource_display-core" remote="lenovo" revision="0f8479c34acfb5413aabc621072a883903daa0ea" upstream="lineage-24.0-caf-sm8850" dest-branch="lineage-24.0-caf-sm8850" />
+  <!-- LiveDisplay: wait for the SDM backend at boot, based on a0f3ada220c573a2252bcb506407b04dfb9b3de0. -->
+  <project path="hardware/lineage/interfaces" name="android_hardware_lineage_interfaces" remote="lenovo" revision="0f7fdc499e8f8ecf00d138b0f2afa6f675265d07" upstream="lineage-24.0" dest-branch="lineage-24.0" />
+  <project path="device/lenovo/wuji" name="android_device_lenovo_wuji" remote="lenovo" revision="lineage-24.0" />
+  <project path="vendor/lenovo/wuji" name="proprietary_vendor_lenovo_wuji" remote="lenovo" revision="lineage-24.0" />
+</manifest>
